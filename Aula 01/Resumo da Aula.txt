@@ -1,0 +1,73 @@
+Introdução ao C#
+
+Estrutura de um programa em C#
+
+class Program
+{
+	public static void Main()
+	{
+		System.Console.WriteLine("Hello World pelo notepad!");
+		//System.Console.ReadKey();
+	}
+}
+
+ou
+
+using System;
+
+class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World!");
+	}
+}
+
+
+Tipos de dados:
+
+int e variacoes -> para numeros inteiros
+float, double   -> para numeros reais
+char            -> para um caracter  'a' -> um caracter usa-se aspas simples
+string          -> para sequencia de caracteres  "a" -> usa-se aspas duplas para sequencias de caracteres
+bool		-> para booleano "logico" -> verdadeiro true ou falso false
+DateTime        -> para data e hora
+TimeSpan	-> tempo decorrido
+Bitmap          -> para imagens        
+
+Declaração de Variaveis:
+tipo nome_da_variavel;
+ex:
+   int x,y;
+   string nome;
+   double a,b,c,d;
+   bool achou;
+
+Ler e escrever valores
+  Ler 
+     System.Console.ReadLine();  // problema é que ele le uma string
+     
+     para ler um numero inteiro ou real precisa converter
+     ex:
+     string linha = System.Console.ReadLine();
+     int x = Convert.toInt32(linha); // int x = int.parse(linha);        
+       
+  Escrever
+      Console.WriteLine(formatacao, lista de variaveis);  
+      ex:
+       Console.WriteLine("Nome={0}\nA={1}\nB={2}\nX={3}", nome, a,b,x); 
+
+Aritmetica
+   op   	desc		ex:
+   +    	soma  		a + b
+   -		subtracao	a - b
+   *		multiplicacao	a * b
+   /		divisao		a / b
+   %		resto		a % b	
+  Math.Sqrt()   raiz quadrada   Math.Sqrt(a)
+  Math.Pow()    potencia	Math.Pow(x,y)     x elevado a y
+  Math.Sin()	seno		Math.Sin(ang)
+  Math.Abs()	absoluto	Math.Abs(a)	  retorna a sem sinal
+  
+
+
