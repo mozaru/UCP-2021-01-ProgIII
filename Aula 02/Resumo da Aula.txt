@@ -1,0 +1,85 @@
+Introdução ao C#
+
+Estrutura  C#
+
+string (string ou String)
+
+string x;
+
+x = "jose das coves";
+
+if (x == "jose das coves") 
+ Console.WriteLine("igual");
+if (x > "jose das bananas") 
+ Console.WriteLine("eh maior");
+
+Console.WriteLine("quantidade de letras={0}", x.length);
+
+if (string.IsEmptyOrNull(x))
+  Console.WriteLine("vazio");
+
+
+Estruturas de Seleção
+
+1. if
+  sintaxe:
+     if (condicao)
+       comando_caso_condicao_verdadeira;
+     
+     or
+ 
+     if (condicao)
+       comando_caso_condicao_verdadeira;
+     else
+       comando_caso_condicao_false;
+
+ex:
+    if (a<b)
+       c = a;
+    else
+       c = b;
+
+  operadores relacionais
+
+   menor		<
+   menor ou igual	<= 
+   maior		>
+   maior ou igual	>=
+   igualdade		==
+   diferente		!=
+
+  operadores logicos
+
+   e 			&&
+   ou			||
+   negacao		!
+
+ ex:
+    if (a>10 && b<50 && a>b)
+	Console.WriteLine("Ligar alerta!");
+
+
+2. Operador Ternario ( ? : )
+   sintaxe:
+     condicao ? valor_verdadeira : valor_falsa
+
+  ex:
+    c = a<b ? a : b;
+
+  
+    string s = "O menor valor é: " + (a<b ? a : b) + " que legal";
+    
+
+3. switch - case 
+
+   switch(expressao)
+   {
+      case valor_1: comandos;.....
+                    break;
+      case valor_2: comandos;.....
+                    break;
+      default: comandos;...
+	       break;
+   }
+
+obs1:  
